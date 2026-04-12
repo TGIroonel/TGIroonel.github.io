@@ -1,0 +1,18 @@
+/* 头像方形+阴影效果 */
+.avatar-img {
+    border-radius: 5px !important; /* 8px为圆角大小，0为完全直角 */
+    transition: all 0.3s ease !important;
+}
+
+.avatar-img:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .avatar-img {
+        border-radius: 6px !important;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1) !important;
+    }
+}

@@ -1,0 +1,40 @@
+/* 默认状态：所有图标显示为灰色 */
+.card-info-social-icons .social-icon i {
+  color: #d9d9d9 !important; /* 灰色默认颜色 */
+  transition: all 0.3s ease;
+}
+
+/* 悬停状态：根据图标类型显示特定颜色 */
+.card-info-social-icons .social-icon[href*="qq.com"]:hover i {
+  color: #12B7F5 !important; /* QQ蓝色 */
+}
+
+.card-info-social-icons .social-icon[href^="javascript:void(0)"]:hover i {
+  color: #ff8000 !important; /* 博客橙色 */
+}
+
+.card-info-social-icons .social-icon[href*="github.com"]:hover i {
+  color: #323437 !important; /* GitHub深灰 */
+}
+
+.card-info-social-icons .social-icon[href^="https://www.youtube.com"]:hover i,
+.card-info-social-icons .social-icon[href^="http://www.youtube.com"]:hover i,
+.card-info-social-icons .social-icon[href^="https://youtube.com"]:hover i,
+.card-info-social-icons .social-icon[href^="http://youtube.com"]:hover i {
+  color: #FE0000 !important; /* YouTube红色 */
+}
+
+/* 悬停动画效果 */
+.card-info-social-icons .social-icon:hover i {
+  transform: translateY(-3px);
+}
+
+.card-info-social-icons .social-icon:active i {
+  transform: translateY(0) !important;
+  transition: none !important;
+}
+
+.card-info-social-icons .social-icon[style] {
+  background: none !important;
+  border: none !important;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>TGIroonel - TGI并非无意义字母</title><meta name="author" content="TGIroonel"><meta name="copyright" content="TGIroonel"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="这个人还没有写简介">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TGIroonel">
+<meta property="og:url" content="https://tgiroonel.github.io/index.html">
+<meta property="og:site_name" content="TGIroonel">
+<meta property="og:description" content="这个人还没有写简介">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tgiroonel.github.io/img/avatar.png">
+<meta property="article:author" content="TGIroonel">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tgiroonel.github.io/img/avatar.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "TGIroonel",
+  "alternateName": [
+    "TGI并非无意义字母",
+    "tgiroonel.github.io"
+  ],
+  "url": "https://tgiroonel.github.io/"
+}</script><link rel="shortcut icon" href="/resources/TGI%20logo%20positive.png"><link rel="canonical" href="https://tgiroonel.github.io/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.9/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><link rel="stylesheet" href="https://fontsapi.zeoseven.com/979/main/result.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#303030","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: true,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: false,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'TGIroonel',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><link rel="stylesheet" href="/css/fonts/font.css"><link rel="preload" href="/fonts/GeourceSansCHS-Medium.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/GeourceSansCHS-Regular.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/GeourceSansCHS-Bold.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/fonts/size.css"><link rel="stylesheet" href="/css/avatar.css"><link rel="stylesheet" href="/css/hover.css"><link rel="stylesheet" href="/css/sweetalert.css"><link rel="stylesheet" href="/css/nav-fixed.css?v=20240411"><script>
+  (function() {
+    const now = new Date().getTime();
+    const lastShown = localStorage.getItem('splash-timestamp');
+    const twentyFourHours = 24 * 60 * 60 * 1000; // 24小时的毫秒数
+    if (!lastShown || (now - lastShown > twentyFourHours)) {
+      document.documentElement.classList.add('phase-welcome');
+    }
+    document.documentElement.classList.add('title-anim-ready');
+  })();
+</script>
+<link rel="stylesheet" href="/css/indexload/splash.css"><link rel="stylesheet" href="/css/indexload/defaults.css"><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/maps/"><span> 导航</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/products/"><span> 产品</span></a></div><div class="menus_item"><span class="site-page group"><span> 资源</span></span><ul class="menus_item_child"><li><a class="site-page child" href="/pictures/"><span> 图片</span></a></li><li><a class="site-page child" href="/movies/"><span> 视频</span></a></li><li><a class="site-page child" href="/music/"><span> 音乐</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 其他</span></span><ul class="menus_item_child"><li><a class="site-page child" href="/competitions/"><span> 赛事</span></a></li><li><a class="site-page child" href="/links/"><span> 合作伙伴</span></a></li><li><a class="site-page child" href="/photographs/"><span> T.L.艺术馆</span></a></li><li><a class="site-page child" href="/tel/"><span> 联系方式</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/resources/top%20page.webp);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/resources/TGI_logo_negative.svg" alt="Logo"><span class="site-name">TGIroonel</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/maps/"><span> 导航</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/products/"><span> 产品</span></a></div><div class="menus_item"><span class="site-page group"><span> 资源</span></span><ul class="menus_item_child"><li><a class="site-page child" href="/pictures/"><span> 图片</span></a></li><li><a class="site-page child" href="/movies/"><span> 视频</span></a></li><li><a class="site-page child" href="/music/"><span> 音乐</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 其他</span></span><ul class="menus_item_child"><li><a class="site-page child" href="/competitions/"><span> 赛事</span></a></li><li><a class="site-page child" href="/links/"><span> 合作伙伴</span></a></li><li><a class="site-page child" href="/photographs/"><span> T.L.艺术馆</span></a></li><li><a class="site-page child" href="/tel/"><span> 联系方式</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><span id="site-title">TGIroonel-个人技术博客</span><span id="site-subtitle">施工（摸渔）中，有空随缘做一点，具体完工时间未知</span><div id="site_social_icons"><a class="social-icon" href="https://qm.qq.com/q/xtT5q6PYxc" target="_blank" title="QQ"><i class="fab fa-qq" style="color: #12B7F5;"></i></a><a class="social-icon" href="javascript:void(0)" target="_blank" title="Blog"><i class="fas fa-blog" style="color: #E49445;"></i></a><a class="social-icon" href="https://github.com/TGIroonel" target="_blank" title="GitHub"><i class="fab fa-github" style="color: #3B3F43;"></i></a><a class="social-icon" href="http://www.youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube" style="color: #FE0000;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover left"><a href="/2026/04/08/18548.html" title="LF的摄影笔记"><img class="post-bg" src="/./2026/04/08/18548/cover.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LF的摄影笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/04/08/18548.html" title="LF的摄影笔记">LF的摄影笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-04-08T14:35:19.984Z" title="发表于 2026-04-08 22:35:19">2026-04-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%91%84%E5%BD%B1%E6%9D%82%E8%B0%88/">摄影杂谈</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/LF/">LF</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%91%84%E5%BD%B1/">摄影</a></span></div><div class="content">介绍 夜景题材常见的有夜景人像、夜景城市、星空、创意光绘等 星空 星空摄影分为3个小类：星野、星轨、银河   在开始前 需要准备的设备：相机、镜头（手动头也可以）、三脚架 其他可选装备：充电宝、相机散热器，户外用品如折叠凳、食物等 相关设置：  光圈：为保证进光量，光圈直接开最大，因此大光圈镜头更具有优势 快门：因为星星是在移动的，防止出现星星“拉丝”情况，快门速度的设置有安全曝光时间公式：  T=500fT=\frac{500}{f} T=f500​ 也就是说，你应该设置的快门速度不超过500÷你镜头的焦距。比如我拿一个16mm的镜头，那么我就应该设置小于30s的曝光时间。注意：如果你是转接镜头，需要换算焦距，比如佳能半画幅转接全画幅镜头要×1.6的系数 另外，单张曝光时间越长星星越亮越密集，如果你发现你的星野或者星轨过于密集杂乱，减小快门速度  ISO：需要你手动调。通常星野800～1600范围，星轨和银河3200～6400范围 对焦：开启手动对焦，找一颗最亮的星，相机上放大画面再手动对焦，对好了就不用动了 焦距选择：优先广角。p.s.如果你想拍摄聚焦于一小块星野或者一块扇形...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2026/03/07/2225.html" title="测试页面1"><img class="post-bg" src="/./2026/03/07/2225/cover.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="测试页面1"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/03/07/2225.html" title="测试页面1">测试页面1</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-03-07T04:44:06.241Z" title="发表于 2026-03-07 12:44:06">2026-03-07</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/TGI%E5%9B%A2%E9%98%9F/">TGI团队</a></span></div><div class="content">注意，本博客正在进行初步搭建工作，本md仅为测试  开始 博客都没做好开始个锤子！ 标题二 视频内嵌测试 随便看个我的bilibili视频吧   代码块风格测试 12345678===================================================================      #####  #    # ##### ##### ###### #####  ###### #      #   #      #    # #    #   #     #   #      #    # #      #       # #      #####  #    #   #     #   #####  #    # #####  #        #      #    # #    #   #     #   #      #####  #      #        #      #    # #    #   #     #   #      #   #  #      #        #      #####   ####    #...</div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">TGIroonel</div><div class="author-info-description">这个人还没有写简介</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://space.bilibili.com/1118611413?spm_id_from=333.1007.0.0"><i class="fab fa-bilibili"></i><span>在bilibili上关注我</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://qm.qq.com/q/xtT5q6PYxc" target="_blank" title="QQ"><i class="fab fa-qq" style="color: #12B7F5;"></i></a><a class="social-icon" href="javascript:void(0)" target="_blank" title="Blog"><i class="fas fa-blog" style="color: #E49445;"></i></a><a class="social-icon" href="https://github.com/TGIroonel" target="_blank" title="GitHub"><i class="fab fa-github" style="color: #3B3F43;"></i></a><a class="social-icon" href="http://www.youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube" style="color: #FE0000;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">该博客施工中...<br>那两篇文章是测试用的，不用管<br>目前没有做竖屏适配，所以手机上访问看着会很阴间<br>还有不要问我为什么这么多bug，前端一时写的爽，后期...别说了在修了QwQ</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/04/08/18548.html" title="LF的摄影笔记"><img src="/./2026/04/08/18548/cover.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LF的摄影笔记"/></a><div class="content"><a class="title" href="/2026/04/08/18548.html" title="LF的摄影笔记">LF的摄影笔记</a><time datetime="2026-04-08T14:35:19.984Z" title="发表于 2026-04-08 22:35:19">2026-04-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/03/07/2225.html" title="测试页面1"><img src="/./2026/03/07/2225/cover.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="测试页面1"/></a><div class="content"><a class="title" href="/2026/03/07/2225.html" title="测试页面1">测试页面1</a><time datetime="2026-03-07T04:44:06.241Z" title="发表于 2026-03-07 12:44:06">2026-03-07</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%91%84%E5%BD%B1%E6%9D%82%E8%B0%88/"><span class="card-category-list-name">摄影杂谈</span><span class="card-category-list-count">1</span></a></li>
+          </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">2</div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-04-12T10:14:03.101Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-flex"></div><div class="footer-other"><div class="footer-copyright"><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 5.4.2</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div><div class="footer_custom_text">© 2025 - 2026 TGIroonel All rights reserved.</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.9/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><script src="/js/sweetalert.js"></script><script src="/js/alert/youRhere.js?v=20240410"></script><script src="/js/splash.js"></script><script src="/js/toc-fixed.js"></script><script src="/js/avatar.js"></script></div></body></html>

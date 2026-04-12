@@ -1,0 +1,79 @@
+/* ===== 基础控制 ===== */
+.phase-welcome body { visibility: hidden; }
+.phase-welcome #splash-screen { display: flex !important; }
+
+/* 定义动画延迟变量：默认 0.2s */
+:root { --title-delay: 0.2s; }
+/* 如果在开屏模式下，标题动画延迟 3s 播放（Welcome 2.5s + 0.5s 淡出） */
+.phase-welcome { --title-delay: 3s; }
+
+/* ===== 标题和副标题动画 (直接整合你的动画代码) ===== */
+@keyframes myAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(40px);
+  }
+}
+
+/* 对应的标题样式也要去掉 position: relative 的依赖，改用 transform */
+.title-anim-ready #page-header #site-title,
+.title-anim-ready #page-header #site-subtitle {
+    opacity: 0;
+    display: block; /* 改为 block 可以消除内联元素的默认间隙 */
+    animation: myAnimation 2s ease var(--title-delay) forwards running;
+    -webkit-animation: myAnimation 2s ease var(--title-delay) forwards running;
+}
+
+/* 默认隐藏主体内容，只有在 loading-splash 类存在时生效 */
+.loading-splash body {
+    visibility: hidden; /* 隐藏 body 但保留结构，防止脚本失效 */
+}
+
+/* 开屏层本身 */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #C4C4C4 no-repeat center center;  /*background: url('/img/splash-bg.jpg')*/
+    background-size: cover;
+    z-index: 10001;
+    display: none; /* 默认隐藏 */
+    transition: opacity 1s ease-out;
+
+    /* === 修复核心：添加以下两行实现居中 === */
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+}
+
+/* 统一类名：确保你的 JS 切换的是哪个类，这里建议统一使用 phase-welcome */
+.phase-welcome #splash-screen,
+.loading-splash #splash-screen {
+    display: flex !important;
+}
+
+/* “Welcome” 文字样式及动画 */
+#splash-welcome {
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.2s forwards 0.5s; /* 延迟0.5s开始，持续1.2s */
+}
+
+/* 文字浮出动画定义 */
+@keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.splash-fade-out {
+    opacity: 0 !important;
+    transition: opacity 1s ease-out;
+}
